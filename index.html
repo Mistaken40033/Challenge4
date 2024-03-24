@@ -4,46 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Blog</title>
+    <link rel="stylesheet" href="assets/style.css/form.css"></link>
 
 </head>
 <body>
-    <div class="night">
-        <span class ="change">OFF</span>
-    </div>
-    <div( ".change" ).on("click", function() {
-        if( ( "body" ).hasClass( "dark" )) {
-            ( "body" ).removeClass( "dark" );
-            ( ".change" ).text( "OFF" );
-        } else {
-            ( "body" ).addClass( "dark" );
-            ( ".change" ).text( "ON" );
-
-        <!-- <div class="row toggle">
-          <label class="switch col">
-            <input type="checkbox" id="theme-switcher">
-            <span class="slider round"></span>
-          </label>
-          <div class="col">
-            <p>LIGHT MODE</p>
-          </div>
+    <h1>Toggle Day and Night Mode</h1>
+    <h2>My First Blog</h2>
+    <div class="content-wrapper">
+        <div class ="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="slider round"></div>
+                
+            </label>
         </div>
-    <h1>My First Blog</h1>
-    <div class="container dark"></div>
-    <div class="toggle"></div>
-    <div class = "dark-light">
-        <label class ="switch col">
-        <input type="switch" id="theme-switcher">
-        <span class="slider round"></span>
-    </label>
-    <label class ="row toggle">
-
-        <input type="toggle" id="theme-switcher">
-        <span class="slider round"></span>
-    </label>
-    <div class="col">
-        <p>LIGHT MODE</p>
     </div>
-    <a href="blog.html">blog</a>
-    <script src ="assets/style.js/form.js"></script> -->
+    <form action="blog.html">
+        <label for="Username">Username:</label><br>
+        <input type="text" id="name" name="name" value=""><br>
+        <label for="title">Title:</label><br>
+        <input type="text" id="" value=""><br><br>
+        <label for="content">Content:</label><br>
+        <input type="" id="" value=""><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+    <link href="assets/style.js/form.js"></script>   
+  
+    <link rel="stylesheet" href="assets/style.css/form.css"
 </body>
 </html>
+        
+    

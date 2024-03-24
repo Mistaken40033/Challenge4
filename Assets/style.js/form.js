@@ -1,14 +1,24 @@
-const themeSwitcher = document.querySelector('#theme-switcher');
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme')
 
-let mode = 'dark';
+if(currentTheme){
+  document.documentElement.setAttribute('data-theme',currentTheme);
 
-themeSwitcher.addEventListener('fullscreenchange',function(){
-    if (mode === 'dark') {
-        mode= 'light';
-        themeSwitcher.setAttribute('class', 'light');
-        }
-    else {
-        mode = 'dark';
-        themeSwitcher.setAttribute('class', 'dark');
-    }
-});
+  if(currentTheme ==='dark'){
+    toggleSwitch.checked = true;
+  }
+
+}
+
+function switchTheme(e){
+  if(e.target.checked){
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme','dark');
+  }
+  else{
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+toggleSwitch.addEventListener('charge', switchTheme, false);

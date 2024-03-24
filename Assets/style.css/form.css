@@ -1,0 +1,103 @@
+/*Button switches to Night or Light*/
+:root{
+    color: rgba(14, 99, 99, 0.902);
+    background-color: rgb(211, 215, 194);
+    background-image: url(https://i.pinimg.com/564x/4f/cd/06/4fcd06b4a106742a55c810678d260e1a.jpg);
+    /* background-size: contain; */
+    background-repeat:repeat-y;
+    background-position: center;
+    /* position: relative; */
+    /* display: inline; */
+}
+[data-theme=dark]{
+    background-color: chocolate;
+}
+body{
+    padding: 0;
+    margin: 0;
+    /* background-color: rgb(255, 255, 255); */
+    width: 40%;
+    display:inline;
+    text-align: right;
+}
+.action{
+    background-color: rgb(30, 255, 0);
+    border: 10%;
+    text-align: right;
+}
+
+section {
+    width: 5%;
+    height: 5%;
+    padding: 5%;
+    /* border: 5px rgb(181, 16, 16); */
+    margin: 0%;
+}
+
+p {
+    font-size: 190%;
+    margin: 0;
+    color: rgb(208, 26, 23);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 10px;
+}
+.theme-switcher-wrapper {
+    align-items: center;
+    margin-top: 50%;
+}
+.theme-switch{
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    width: 250px;
+}
+.theme-switch input{
+    display: none;
+}
+h1{
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: right;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slider.round{
+    
+    background-color: rgb(195, 161, 92);
+    bottom: 10%;
+    cursor: pointer;
+    left: 10%;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    transition: 0.9s;
+}
+.slider.slider.round:before {
+    background-color: (rgb(190, 31, 31));
+    bottom: 4px;
+    content: '';
+    height: 92px;
+    left: 5px;
+    position: absolute;
+    transform: 0.9s;
+    width: 10px;
+}
+input:checked + .slider{
+    background-color:rgb(38, 37, 73);
+}
+input:checked + .slider:before {
+    transform: translateX(148px);
+}
+.slider.round{
+    border-radius: 80px;
+}
+.slider.round:before{
+    border-radius: 50px;
+}
+
+.content-wrapper{
+    text-align: center;
+    width: 100%;
+    margin: 10%;
+}
+
