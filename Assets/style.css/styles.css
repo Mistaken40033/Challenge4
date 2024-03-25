@@ -1,6 +1,6 @@
 /*Button switches to Night or Light*/
 body {
-    /* width: 90%; */
+    min-height:50%;
     color: rgba(55, 31, 31);
     /* background-color: rgb(211, 215, 194); */
     background-image: url(https://i.pinimg.com/564x/4f/cd/06/4fcd06b4a106742a55c810678d260e1a.jpg);
