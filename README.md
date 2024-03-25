@@ -1,5 +1,13 @@
 # 04 Web APIs: Personal Blog
 
+## My First Blog
+    - Resources: Study Groups with classmates
+    - Reviewed past prework from TA Dan and his Zoom classes
+    - Notes taken
+    - YouTube
+    - MDN Web Docs
+    - stackoverflow website
+
 ## Your Task
 
 In this challenge, you'll create a two-page website where users will input and view blog posts. It includes building a content form, dynamically rendering blog posts, and implementing a light/dark mode toggle. As you code, you'll gain practical JavaScript experience, explore the Document Object Model's power, and set the stage for more advanced tasks.
