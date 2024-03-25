@@ -1,4 +1,3 @@
-
 const toggleSwitch = document.getElementById('toggleSwitch');
 const body = document.body;
 
