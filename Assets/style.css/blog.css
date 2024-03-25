@@ -43,8 +43,7 @@
 
 .slider.round{
     background-color:rgba(11, 11, 91, 0.247);
-    display: block;
-    margin: 00%;
+    margin: 0%;
     width: 100%;
     bottom: 0%;
     cursor: pointer;
